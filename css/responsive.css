@@ -1,3 +1,13 @@
-@media screen and (min-width: 660px) {
-	
+@media screen and (max-width: 375px) {
+	/*#breadcrumb{
+	  width: 100%;
+	}*/
+/*	.inside #map-container {
+	  background: blue none repeat scroll 0 0;
+	  height: 87%;
+	  position: fixed;
+	  right: 0;
+	  top: 130px;
+	  width: 50%;
+	}*/
 }
