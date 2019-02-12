@@ -163,7 +163,7 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  /*min-height: 248px;*/
   min-width: 100%;
 }
 #restaurants-list li h1 {
@@ -191,6 +191,11 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+#main-restaurant{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ====================== Restaurant Details ====================== */
