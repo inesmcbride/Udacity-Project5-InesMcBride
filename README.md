@@ -22,4 +22,4 @@ The code was provdided but it had a lot of issues. It wasn'n usable on a desktop
 ### References
 
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/).
-[Matthew Cranfords Walkthrough Blog] (https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/) and [Doug Brown's Webinar] (https://www.youtube.com/watch?v=92dtrNU1GQc) were used as reference alongside the development of this project.
+[Matthew Cranfords Walkthrough Blog](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/) and [Doug Brown's Webinar](https://www.youtube.com/watch?v=92dtrNU1GQc) were used as reference alongside the development of this project.
