@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = DBHelper.imageAlt(restaurant);
   li.append(image);
 
-  const name = document.createElement('h3');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
@@ -176,10 +176,14 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
-  const more = document.createElement('a');
+  const more = document.createElement('button');
   more.innerHTML = 'View Details';
-  more.href = DBHelper.urlForRestaurant(restaurant);
   more.tabIndex = '3';
+  more.type = 'button';
+  more.addEventListener('click', function(){
+    more.href = DBHelper.urlForRestaurant(restaurant);
+    window.location = more.href;
+  })
   li.append(more)
 
   return li
