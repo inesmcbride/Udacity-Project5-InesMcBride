@@ -180,10 +180,12 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.tabIndex = '3';
   more.type = 'button';
-  more.addEventListener('click', function(){
+  link = () => {
     more.href = DBHelper.urlForRestaurant(restaurant);
     window.location = more.href;
-  })
+  }
+  more.addEventListener('click', link)
+  
   li.append(more)
 
   return li
