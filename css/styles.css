@@ -302,3 +302,6 @@ nav h1 a {
 #date{
   font-style: italic;
 }
+button:focus{
+  2px solid pink;
+}
