@@ -1,9 +1,9 @@
 //Caching URLs
-let cacheName = 'restaurant-review-v1';
+let mainCacheName = 'restaurant-review-v1';
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(cacheName).then (cache => {
+    caches.open(mainCacheName).then (cache => {
     	console.log('it worked');
 		return cache.addAll([
 			'/',
@@ -33,6 +33,23 @@ self.addEventListener('install', event => {
     })
   );
 });
+
+//Refreshing caches with updates on reload
+self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames){
+    return Promise.all(
+    	cacheNames.filter(function(cacheName){
+    		return cacheName.startsWith('restaurant-review') &&
+    		cacheName != mainCacheName;
+    	}).map(function(cacheName){
+    		return caches.delete(cacheName);
+    		})
+		);
+  	})
+    );
+});
+
 
 //Returning cached urls when offline
 self.addEventListener('fetch', function(event) {
