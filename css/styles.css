@@ -116,6 +116,9 @@ nav h1 a {
   background-color: #3397DB;
   align-items: center;
   padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .filter-options h2 {
   color: white;
@@ -293,5 +296,8 @@ nav h1 a {
   text-transform: uppercase;
 }
 #rating {
-  color: #000034;
+  color: #2828cc;
+}
+#date{
+  font-style: italic;
 }
